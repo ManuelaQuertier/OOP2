@@ -25,7 +25,7 @@ class Car extends Vehicule{
     {
         return $this -> energy;
     }
-    public function setEnergy(): Car
+    public function setEnergy($energy): Car
     {
         if (in_array($energy, self:: ALLOWED_ENERGIES)){
             $this -> energy = $energy;
@@ -37,7 +37,7 @@ class Car extends Vehicule{
     {
         return $this -> energyLevel;
     }
-    public function setEnergyLevel(): int
+    public function setEnergyLevel($energyLevel): void
     {
         $this -> energyLevel = $energyLevel;
     }
